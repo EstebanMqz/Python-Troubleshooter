@@ -1,8 +1,11 @@
 <h1><div align="center"><font color= '#318f17'><b> Virtual Environment </b></font></div></h1>
+<div align="right"> 
 
-<h3><font color= '#070585'><i> ¿Pipenv,conda or subprocess? </i></font></h1>
+[![Gists](https://img.shields.io/badge/Gists-Environment-010b38?style=square&logo=github&*logoColor*=black)](https://gist.github.com/EstebanMqz/f30253a8bf8cb50b4510aa8bda10bf7c) </div>
 
-## `pipenv` [![pipenv](https://img.shields.io/badge/pipenv-v2021.5.29-blue?style=flat)](https://pypi.org/project/pipenv/)
+<h4><font color= '#1e00ff'><i><u> ¿Pipenv,conda or subprocess? </u></i></font></h4>
+
+## `pipenv` [![pipenv](https://img.shields.io/badge/pipenv-v2023.7.11-blue?style=flat)](https://pypi.org/project/pipenv/)
 
 - <b><u>Higher-level</b></u> pkg manager for Python that combines [pip](https://pypi.org/project/pip/) pkg installations and [virtualenv](https://virtualenv.pypa.io/en/latest/) creation.
 - Simpler & streamlined way to manage dependencies & venv for Python projects, with automatic environment creation & [dependency resolution](https://rubygems-gems.readthedocs.io/projects/pipy/en/stable/topics/more-dependency-resolution/?highlight=dependency%20resolution).
