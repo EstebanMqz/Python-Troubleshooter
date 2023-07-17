@@ -1,6 +1,5 @@
 #!/bin/bash
-#Script that retrieves HTML i-nth date Python x.y.z version to the user in order to add/repair features in local/system. 
-
+#Description: Retrieves i->nth date Python x.y.z version from HTML to extract no°, dates, x.y.z version and retrieve .exe to repair/upgrade Python in local/system. 
 
 html=$(curl -s https://www.python.org/downloads/)
 mapfile -t versions < <(echo "$html" | grep -oP '(?<=Python )\d+\.\d+\.\d+')
@@ -10,7 +9,7 @@ for i in "${!versions[@]}"; do
     echo "$i version: ${dates[$i]} Python ${versions[$i]}"
 done
 
-echo "Write a valid version (e.g: '3.11.4'):"
+echo "Write a valid version to (e.g: '3.11.4'):"
 read selection
 
 if [[ " ${versions[@]} " =~ " ${selection} " ]]; then
@@ -19,3 +18,9 @@ if [[ " ${versions[@]} " =~ " ${selection} " ]]; then
 else
     echo "Invalid version"
 fi
+
+#Author: EstebanMqz
+#Repository: https://github.com/EstebanMqz/Python_Repair
+#Mail: esteban@esteban.com 
+
+#Feel free to contact if you encounter any problems.
