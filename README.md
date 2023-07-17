@@ -5,7 +5,7 @@
 [![Repository](https://img.shields.io/badge/Repository-0089D6?style=square&logo=microsoft-azure&logoColor=white)](https://mango-dune-07a8b7110.1.azurestaticapps.net/?repo=EstebanMqz%2FPython_Repair) [![Jupyter](https://img.shields.io/badge/nbviewer-1.0.0-000000?style=square&logo=jupyter&logoColor=orange)](https://nbviewer.org/github/EstebanMqz/Python_Repair/blob/main/pkgs.ipynb)
 </div>
 
-[![Shell Script](https://img.shields.io/badge/Shell%20Script-1.0.1-green?style=flat&logo=gnu-bash&logoColor=white)](https://www.gnu.org/software/bash/) [![Python](https://img.shields.io/badge/Python-3.11.4-blue?style=flat&logo=python&logoColor=white)](https://www.python.org/) [![Git](https://img.shields.io/badge/Git-2.41.0-red?style=flat&logo=git&logoColor=white)](https://git-scm.com/) [![subprocess](https://img.shields.io/badge/subprocess-builtin_module-black?style=flat)](https://docs.python.org/3/library/subprocess.html)
+[![Shell Script](https://img.shields.io/badge/Shell%20Script-1.0.1-green?style=flat&logo=gnu-bash&logoColor=white)](https://github.com/EstebanMqz/Python_Repair/blob/main/Python_Repair.sh) [![Python](https://img.shields.io/badge/Python-3.11.4-blue?style=flat&logo=python&logoColor=white)](https://www.python.org/) [![Git](https://img.shields.io/badge/Git-2.41.0-red?style=flat&logo=git&logoColor=white)](https://git-scm.com/) [![subprocess](https://img.shields.io/badge/subprocess-builtin_module-black?style=flat)](https://docs.python.org/3/library/subprocess.html)
 
 <div align="right">
 <Details>
@@ -19,14 +19,14 @@
 
 |                                 | <div align="center"> Description </div>                                   |
 | ------------------------------------------ | ----------------------------------------                       |
-| Type: | [Shell Script](https://www.gnu.org/software/bash/) |
+| Type: | [Shell Script](https://github.com/EstebanMqz/Python_Repair/blob/main/Python_Repair.sh) |
 | Usage: | Script that fetches $i \rightarrow n$ `Python` versions from their [official website]((https://www.python.org/downloads/)) with the novelty of quickly providing the user an array that shows the `release no°`, exact `release dates`, & `versions x.y.z` by its execution. Then it asks the user for `x.y.z` as input in order to `download` the specified version .exe and run it to add/repair features in local/system.             |
 | Author: | [EstebanMqz](https://github.com/EstebanMqz)                                                              |
 | Tags: | [Python](https://www.python.org/),  [Git](https://git-scm.com/) |
 
 ## `subprocess` 
 
-- Built-in module that generates processes from terminals <i>([cmd](https://en.wikipedia.org/wiki/Cmd.exe), [bash](https://github.com/EstebanMqz/Git-Basic-Commands), [powershell](https://learn.microsoft.com/en-us/powershell/), etc.) </i> , connects to their [input,output & error pipes](https://docs.python.org/3/library/subprocess.html#subprocess.Popen) while returning their respective [output codes](https://docs.python.org/3/library/subprocess.html#subprocess.CompletedProcess) <i>(0: success, 1: error, 2: warning).</i>
+- Built-in module that generates processes from terminals <i>([cmd](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/cmd), [bash](https://github.com/EstebanMqz/Git-Basic-Commands), [powershell](https://learn.microsoft.com/en-us/powershell/), etc.) </i> , connects to their [input,output & error pipes](https://docs.python.org/3/library/subprocess.html#subprocess.Popen) while returning their respective [output codes](https://docs.python.org/3/library/subprocess.html#subprocess.CompletedProcess) <i>(0: success, 1: error, 2: warning).</i>
 - [`subprocess`](https://docs.python.org/3/library/subprocess.html) is considered <i>lower-level</i> because of its manual config., but has more control over processes. <br>
 
 
@@ -34,6 +34,27 @@
 
 ##### 📌 Execution:
 
+<Details>
+<Summary> <i>Backup pkgs (if any):</i> </Summary>
+
+```python
+#Make a list of all pkgs in local/system.
+import subprocess
+pip_freeze = subprocess.check_output(['pip', 'freeze']).decode().split('\n')
+pkgs = [pkg.split('==')[0] for pkg in pip_freeze if pkg != '']
+with open('old.txt', 'w') as f:
+    for pkg in pkgs:
+        f.write(pkg + '\n')
+
+#Read the list of pkgs in old.txt
+with open('old.txt', 'r') as f:
+    old_pkgs = f.read().split('\n')
+    print(old_pkgs)
+```
+
+</Details>
+
+#
 <Details>
 <Summary> <i>Execute .sh:</i> </Summary>
 
