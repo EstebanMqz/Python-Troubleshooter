@@ -98,7 +98,14 @@ for pkg in pkgs:
     except subprocess.CalledProcessError as e:
         print(f"An error occurred while updating {pkg}: {e}")
         pass
+
+# An error occurred while updating anaconda-navigator
+# : Command '['pip', 'install', '--upgrade', 'anaconda-navigator\n']' returned non-zero exit status 1.
+# An error occurred while updating anaconda-project 
+#...
+# An error occurred while updating python-snappy
+# : Command '['pip', 'install', '--upgrade', 'python-snappy \n']' returned non-zero exit status 1.
 ```
+<i>(see [output-codes](#subprocess) for more info.)</i>
 
 </Details>
-
