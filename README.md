@@ -109,3 +109,8 @@ for pkg in pkgs:
 <i>(see [output-codes](#subprocess) for more info.)</i>
 
 </Details>
+
+<br>
+<b>Note:</b> <i>If the pkg installation is to reproduce another environment.</i> <br>
+
+###### See also: &nbsp; [![Packages](https://img.shields.io/badge/Virtual-Environment-black?style=flat&logo=github&logoColor=black)](https://gist.github.com/EstebanMqz/f30253a8bf8cb50b4510aa8bda10bf7c)
