@@ -25,7 +25,7 @@
 |                                 | <div align="center"> Description </div>                                   |
 | ------------------------------------------ | ----------------------------------------                       |
 | Type: | [Shell Script](https://github.com/EstebanMqz/Python_Repair/blob/main/Python_Repair.sh) |
-| Usage: | Advanced troubleshooting tool to migrate and update packages in [Python](https://www.python.org/downloads/) environments.<br>Solves packages incompatibility issues, runtime errors & security vulnerabilities :white_check_mark:.|
+| Usage: |  Python dependency resolution / subprocess troubleshooting tool.<br>Solves packages incompatibility issues, runtime errors & security vulnerabilities in <i><b>local/virtual environments</b></i> for Python's migrations or collaborations purposes. <br><i>|
 | Author: | [EstebanMqz](https://github.com/EstebanMqz)                                                              |
 | Tags: | [Python](https://www.python.org/), [Shell](https://en.wikipedia.org/wiki/Shell_script), [Environment](https://en.wikipedia.org/wiki/Environment_variable), [Dependencies](https://pypi.org), [Git](https://git-scm.com/) |
 
@@ -88,11 +88,14 @@ git clone https://github.com/EstebanMqz/Pkg_Migration.git
 with open('old.txt', 'r') as f:
     pkgs = f.readlines()
 for pkg in pkgs:
-    try:
+    try: 
         subprocess.check_call(['pip', 'install', '--upgrade',\
-                               '--upgrade-strategy', 'only-if-needed', pkg])
+                               '--upgrade-strategy', 'only-if-needed', pkg]) #if requirements.txt: 'to-satisfy-only'
+        pkg_info = subprocess.check_output(['pip', 'show', pkg]).decode('utf-8')
+        pkg_version = [line for line in pkg_info.split('\n') if line.startswith('Version: ')][0].split(': ')[1]
+        print(f"Successfully updated {pkg} to version {pkg_version}") 
     except subprocess.CalledProcessError as e:
-        print(f"An error occurred while updating {pkg}: {e} see subprocess refs.")
+        print(f"An error occurred while updating {pkg}: {e.returncode}")
         pass
 
 # see output codes
