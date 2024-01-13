@@ -1,27 +1,39 @@
 #!/bin/bash
-# Advanced installer to migrate Python dependencies & update/downgrade pkgs versions in environment.
+
+# Description: "This script fetched through HTTP requests with curl, current & available Python versions including their release date, 
+                # then prompts user to make a selection for its installation to have it executed."
+
+#Obtain current Python version (if any).
 current_version=$(python --version 2>&1 | cut -d' ' -f2)
 echo current Python version: $current_version
 
-# version no° / mmmm,dd,yyyy / x.y.z version
+# Available Python versions and release dates from official Python website.
 html=$(curl -s https://www.python.org/downloads/)
 mapfile -t versions < <(echo "$html" | grep -oP '(?<=Python )\d+\.\d+\.\d+') 
 mapfile -t dates < <(echo "$html" | grep -oP '(?<=<span class="release-date">)[^<]+')
  
-# Version no° historically / Date published (mmmm,dd,yyyy) / x.y.z version   
+# Include dates to sorted versions and output array.  
 for i in "${!versions[@]}"; do
-    echo "$i version: ${dates[$i]} Python ${versions[$i]}"
+    echo "$i version: ${dates[$i]} Python   ${versions[$i]}"
 done
 
+#Chose a version to execute.
 echo "Write a valid version (e.g: '3.11.4'):"
 read selection
 
+# If version is valid.
 if [[ " ${versions[@]} " =~ " ${selection} " ]]; then
+    # Download the selected Python version .exe.
     curl -O "https://www.python.org/ftp/python/$selection/python-$selection-amd64.exe"
+    # Execute. 
     ./python-$selection-amd64.exe
 else
     echo "Invalid version"
 fi
 
-#Repository: https://github.com/EstebanMqz/Pkg_Migration 
-#Feel free to contact the author if you encounter any problems.
+#Author: https://github.com/EstebanMqz
+#Repository: https://github.com/EstebanMqz/Python-Troubleshooter
+
+#References:
+#https://curl.se/docs/httpscripting.html
+#https://linuxcommand.org/lc3_man_pages/mapfileh.html

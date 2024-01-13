@@ -1,4 +1,4 @@
-<h1><div align="center"><b> Python Environment Migrations </b></font></div></h1><br>
+<h1><div align="center"><b> Python Environments Migrations </b></font></div></h1><br>
 
 <div align="left">
 
@@ -19,25 +19,17 @@
 </Details></div>
 <br><br>
 
-
 |                                 | <div align="center" style="font-size:20px;">Description</div>                                   |
 | ------------------------------------------ | ----------------------------------------                       |
 | Ext.:  | [.sh](https://github.com/EstebanMqz/Python-Troubleshooter/blob/main/Python_Repair.sh), [.ipynb](https://github.com/EstebanMqz/Python-Troubleshooter/blob/main/pkgs.ipynb) |
-| Usage: | The programs in this repo work individually and they update/downgrade Local/Virtual environments for Package Migrations in any Python version. Solves incompatibility issues, runtime errors & security vulnerabilities and ensuring efficient Data Science Teams remote  collaborations. <br><i>|
-| Author: | [EstebanMqz](https://github.com/EstebanMqz)                                                              |
-| Tags: | [Python](https://www.python.org/), [Shell](https://en.wikipedia.org/wiki/Shell_script), [Environment](https://en.wikipedia.org/wiki/Environment_variable), [Dependencies](https://pypi.org), [Git](https://git-scm.com/) |
+| Usage: | While most programs in this repo work individually, they ensure remote environment collaborations by using a certain Python version by following simple steps in order to match Python's versions with their corrresponding pkgs in a project solving dependencies incompatiblities, runtime errors & security vulnerabilities. <br><br> <i> It uses <i>(default)</i> [curl](https://linux.die.net/man/1/curl) HTTP GET requests and pip [--upgrade-strategy only-if-needed](https://pip.pypa.io/en/stable/cli/pip_install/#cmdoption-upgrade-strategy)</i>|
+| Author: | <a href="https://github.com/EstebanMqz"><img src="https://img.shields.io/badge/Github-EstebanMqz-black?style=flat&logo=github&logoColor=black" alt="Github"></a>|
+| Tags: | [Python](https://www.python.org/), [Shell](https://en.wikipedia.org/wiki/Shell_script), [Environment](https://en.wikipedia.org/wiki/Environment_variable), [Dependencies](https://pypi.org), [Git](https://git-scm.com/) 
 
 ---
-<br>
-
-@echo off
-for /f "delims=" %%i in ('conda info --base') do set "base=%%i"
-runas /user:Administrator "%base%\Scripts\anaconda.exe"
-
-
 ### Steps:
-1. Clone repoSITORY<br>
-2. [<img width="20px" src="https://cdn.imgbin.com/18/17/10/imgbin-cmd-exe-computer-icons-command-line-interface-prompt-horizontal-line-DiMfzbXZgACek3T2u1FbmLSUL.jpg">](https://www.anaconda.com/products/distribution) 
+1. Clone Repo<br>
+2. Run .sh [<img width="20px" src="https://cdn.imgbin.com/18/17/10/imgbin-cmd-exe-computer-icons-command-line-interface-prompt-horizontal-line-DiMfzbXZgACek3T2u1FbmLSUL.jpg">](https://www.anaconda.com/products/distribution) 
 
 ```bat
 REM CMD script
