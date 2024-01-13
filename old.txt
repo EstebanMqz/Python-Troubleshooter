@@ -132,6 +132,7 @@ greenlet
 grep
 grip
 grpcio
+h11
 h5py
 HeapDict
 holoviews
@@ -235,6 +236,7 @@ nbclassic
 nbclient
 nbconvert
 nbformat
+ndindex
 nest-asyncio
 networkx
 nltk
@@ -251,6 +253,7 @@ olefile
 openpyxl
 opt-einsum
 osqp
+outcome
 overrides
 packaging
 pandas
@@ -330,6 +333,7 @@ pytest
 pytest-cov
 pytest-mock
 python-dateutil
+python-dotenv
 python-json-logger
 python-lsp-black
 python-lsp-jsonrpc
@@ -338,7 +342,7 @@ python-slugify
 pytoolconfig
 pytz
 pytz-deprecation-shim
-pyviz-comms
+pyviz_comms
 PyWavelets
 pywin32
 pywin32-ctypes
@@ -378,6 +382,7 @@ scipy
 Scrapy
 scs
 seaborn
+selenium
 semver
 Send2Trash
 service-identity
@@ -437,6 +442,8 @@ toolz
 tornado
 tqdm
 traitlets
+trio
+trio-websocket
 Twisted
 twisted-iocpsupport
 typed-ast
@@ -455,6 +462,7 @@ w3lib
 watchdog
 wcwidth
 webcolors
+webdriver-manager
 webencodings
 websocket-client
 Werkzeug
@@ -466,6 +474,7 @@ wincertstore
 wordcloud
 wrapt
 write
+wsproto
 xarray
 xlrd
 XlsxWriter

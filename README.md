@@ -1,14 +1,12 @@
-<h1><div align="center"><font color= '#318f17'><b> Python Troubleshooting Tool </b></font></div></h1>
+<h1><div align="center"><b> Python Environment Migrations </b></font></div></h1><br>
 
-<div align="right">
+<div align="left">
 
-[![Repository](https://img.shields.io/badge/Repository-0089D6?style=square&logo=microsoft-azure&logoColor=white)](https://mango-dune-07a8b7110.1.azurestaticapps.net/?repo=EstebanMqz%2FPkg_Migration) [![Jupyter](https://img.shields.io/badge/nbviewer-1.0.0-000000?style=square&logo=jupyter&logoColor=orange)](https://nbviewer.org/github/EstebanMqz/Pkg_Migration/blob/main/pkgs.ipynb)
+[![Repository](https://img.shields.io/badge/Repo-Visualization-0089D6?style=square&logo=microsoft-azure&logoColor=white)](https://mango-dune-07a8b7110.1.azurestaticapps.net/?repo=EstebanMqz%2Fpkgs.ipynb)
 </div>
 
-[![Shell Script](https://img.shields.io/badge/Shell%20Script-1.0.1-green?style=flat&logo=gnu-bash&logoColor=white)](https://github.com/EstebanMqz/Pkg_Migration/blob/main/Python_Repair.sh) [![Python](https://img.shields.io/badge/Python-3.11.4-blue?style=flat&logo=python&logoColor=white)](https://www.python.org/) [![Git](https://img.shields.io/badge/Git-2.41.0-red?style=flat&logo=git&logoColor=white)](https://git-scm.com/) [![subprocess](https://img.shields.io/badge/subprocess-builtin_module-black?style=flat)](https://docs.python.org/3/library/subprocess.html)
-
 <div align="right">
-<Details>
+<Details open>
 <Summary> <i>Business Inquiries:</i> </Summary>
 
 [<img width="40px" src="https://img.icons8.com/ios/50/0e55b3/resume-website.png">](https://estebanmqz.github.io/EstebanMqz/html/Resume.html)
@@ -22,19 +20,42 @@
 <br><br>
 
 
-|                                 | <div align="center"> Description </div>                                   |
+|                                 | <div align="center" style="font-size:20px;">Description</div>                                   |
 | ------------------------------------------ | ----------------------------------------                       |
-| Type: | [Shell Script](https://github.com/EstebanMqz/Python_Repair/blob/main/Python_Repair.sh) |
-| Usage: |  Python dependency resolution / subprocess troubleshooting tool.<br>Solves packages incompatibility issues, runtime errors & security vulnerabilities in <i><b>local/virtual environments</b></i> for Python's migrations or collaborations purposes. <br><i>|
+| Ext.:  | [.sh](https://github.com/EstebanMqz/Python-Troubleshooter/blob/main/Python_Repair.sh), [.ipynb](https://github.com/EstebanMqz/Python-Troubleshooter/blob/main/pkgs.ipynb) |
+| Usage: | The programs in this repo work individually and they update/downgrade Local/Virtual environments for Package Migrations in any Python version. Solves incompatibility issues, runtime errors & security vulnerabilities and ensuring efficient Data Science Teams remote  collaborations. <br><i>|
 | Author: | [EstebanMqz](https://github.com/EstebanMqz)                                                              |
 | Tags: | [Python](https://www.python.org/), [Shell](https://en.wikipedia.org/wiki/Shell_script), [Environment](https://en.wikipedia.org/wiki/Environment_variable), [Dependencies](https://pypi.org), [Git](https://git-scm.com/) |
 
 ---
+<br>
 
-##### 📌 Execution:
+@echo off
+for /f "delims=" %%i in ('conda info --base') do set "base=%%i"
+runas /user:Administrator "%base%\Scripts\anaconda.exe"
 
-<Details>
-<Summary> <i>Pkgs in environment:</i> </Summary>
+
+### Steps:
+1. Clone repoSITORY<br>
+2. [<img width="20px" src="https://cdn.imgbin.com/18/17/10/imgbin-cmd-exe-computer-icons-command-line-interface-prompt-horizontal-line-DiMfzbXZgACek3T2u1FbmLSUL.jpg">](https://www.anaconda.com/products/distribution) 
+
+```bat
+REM CMD script
+@echo off && for /f "delims=" %%i in ('conda info --base') do set "base=%%i" 
+runas /user:Administrator "%base%\Scripts\anaconda.exe"
+```
+
+3. Open [![Jupyter](https://img.shields.io/badge/nbviewer-1.0.0-000000?style=square&logo=jupyter&logoColor=orange)](https://nbviewer.org/github/EstebanMqz/Pkg_Migration/blob/main/pkgs.ipynb) [.ipynb](https://github.com/EstebanMqz/Python_Troubleshooter/blob/main/pkgs.ipynb)</i> in a Code Editor 
+
+
+4. List pkgs in current environment: old_env  [pkgs.txt](https://github.com/EstebanMqz/Python-Troubleshooter/blob/main/old.txt)<br>
+
+
+
+
+<br>
+<Details open>
+<Summary> <b>Existing Pkgs in env:</b> </Summary>
 
 ```python
 import subprocess
@@ -50,10 +71,9 @@ with open('old.txt', 'r') as f:
 ```
 
 </Details>
-
-#
-<Details>
-<Summary> <i>Execute .sh:</i> </Summary>
+<br><br><br>
+<Details open>
+<Summary> <b>Execute .sh:</b> </Summary>
 
 [Python_Repair.sh](https://github.com/EstebanMqz/Python_Repair/blob/main/Python_Repair.sh)
 
@@ -80,9 +100,9 @@ git clone https://github.com/EstebanMqz/Pkg_Migration.git
 ```
 </Details>
 
-#
-<Details>
-<Summary> <i>Install/Update pkgs in Environment:</i> </Summary>
+
+<Details open>
+<Summary> <b>Install/Update</b> pkgs in Environment: </Summary>
 
 ```python
 with open('old.txt', 'r') as f:
@@ -107,3 +127,20 @@ for pkg in pkgs:
 - [`subprocess`](https://docs.python.org/3/library/subprocess.html) is <i>lower-level</i> because of its manual config., but has more control over processes. <br>
 
 ###### See also : &nbsp; [![Packages](https://img.shields.io/badge/Virtual-Environment-black?style=flat&logo=github&logoColor=black)](https://gist.github.com/EstebanMqz/d42cef9a50e7110c4ede62cc8c251edb)
+</Details>
+
+<h4>References</h4>
+<p>
+  <a href="https://github.com/EstebanMqz/Pkg_Migration/blob/main/Python_Repair.sh">
+    <img src="https://img.shields.io/badge/Shell%20Script-1.0.1-green?style=flat&logo=gnu-bash&logoColor=white" alt="Shell Script">
+  </a>
+  <a href="https://www.python.org/">
+    <img src="https://img.shields.io/badge/Python-3.11.4-blue?style=flat&logo=python&logoColor=white" alt="Python">
+  </a>
+  <a href="https://git-scm.com/">
+    <img src="https://img.shields.io/badge/Git-2.41.0-red?style=flat&logo=git&logoColor=white" alt="Git">
+  </a>
+  <a href="https://docs.python.org/3/library/subprocess.html">
+    <img src="https://img.shields.io/badge/subprocess-builtin_module-black?style=flat" alt="subprocess">
+  </a>
+</p>
