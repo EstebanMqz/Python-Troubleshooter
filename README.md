@@ -60,7 +60,7 @@ Select a version for your base or environment.
 
 <br>
 
-4\. [.exe](https://github.com/EstebanMqz/Python-Troubleshooter/blob/main/python-3.12.0-amd64.exe) should be downloaded in [pwd](https://en.wikipedia.org/wiki/Pwd), execute it.<br>
+4\. An .exe should be downloaded in [pwd](https://en.wikipedia.org/wiki/Pwd), execute it.<br>
 
 <Details>
 <summary>Output:</summary>
@@ -69,7 +69,7 @@ Select a version for your base or environment.
 
 <br>
 
-5\. <img align="center" width="35px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/1767px-Jupyter_logo.svg.png"> Run [pkgs.ipynb](https://github.com/EstebanMqz/Python-Troubleshooter/blob/main/pkgs.ipynb) (step 3) to upgrade pip and to implement an [`upgrade strategy`](https://pip.pypa.io/en/stable/cli/pip_install/#cmdoption-upgrade-strategy)
+5\. <img align="center" width="35px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/1767px-Jupyter_logo.svg.png"> Run [pkgs.ipynb](https://github.com/EstebanMqz/Python-Troubleshooter/blob/main/notebook/pkgs.ipynb) (step 3) to upgrade pip and to implement an [`upgrade strategy`](https://pip.pypa.io/en/stable/cli/pip_install/#cmdoption-upgrade-strategy).
 
 - [`only-if-needed`](https://pip.pypa.io/en/stable/cli/pip_install/#cmdoption-upgrade-strategy): Only upgrade the packages that are needed to satisfy the requirements.
 - [`eager`](https://pip.pypa.io/en/stable/cli/pip_install/#cmdoption-upgrade-strategy): Upgrade all packages regardless of whether they are needed to satisfy the requirements.)
