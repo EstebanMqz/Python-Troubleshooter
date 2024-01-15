@@ -22,14 +22,36 @@
 |                                 | <div align="center" style="font-size:20px;">Description</div>                                   |
 | ------------------------------------------ | ----------------------------------------                       |
 | Ext.:  | [.sh](https://github.com/EstebanMqz/Python-Troubleshooter/blob/main/Python_Repair.sh), [.ipynb](https://github.com/EstebanMqz/Python-Troubleshooter/blob/main/pkgs.ipynb) |
-| Usage: | While most programs in this repo work individually, they ensure remote environment collaborations by using a certain Python version by following simple steps in order to match Python's versions with their corrresponding pkgs in a project solving dependencies incompatiblities, runtime errors & security vulnerabilities. <br><br> <i> It uses <i>(default)</i> [curl](https://linux.die.net/man/1/curl) HTTP GET requests and pip [--upgrade-strategy only-if-needed](https://pip.pypa.io/en/stable/cli/pip_install/#cmdoption-upgrade-strategy)</i>|
-| Author: | <a href="https://github.com/EstebanMqz"><img src="https://img.shields.io/badge/Github-EstebanMqz-black?style=flat&logo=github&logoColor=black" alt="Github"></a>|
+| Usage: | While most programs in this repo work individually, they ensure remote  collaborations in an environment by selecting a certain Python version for it and its corresponding pkgs versions. <br><br> <i> <p style="font-size:15px;">Follow these simple steps in order to solve dependencies incompatibilities, runtime errors & security vulnerabilities in projecta to ensure team's Collaborations by matching requirements & Python version in an environment.</p>|
 | Tags: | [Python](https://www.python.org/), [Shell](https://en.wikipedia.org/wiki/Shell_script), [Environment](https://en.wikipedia.org/wiki/Environment_variable), [Dependencies](https://pypi.org), [Git](https://git-scm.com/) 
 
 ---
 ### Steps:
-1. Clone Repo<br>
-2. Run .sh [<img width="20px" src="https://cdn.imgbin.com/18/17/10/imgbin-cmd-exe-computer-icons-command-line-interface-prompt-horizontal-line-DiMfzbXZgACek3T2u1FbmLSUL.jpg">](https://www.anaconda.com/products/distribution) 
+1\. Clone Repo<br><br>
+
+2\. <img align="center" width="35px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/1767px-Jupyter_logo.svg.png">
+Run [pkgs.ipynb](https://github.com/EstebanMqz/Python-Troubleshooter/blob/main/pkgs.ipynb) to make a list of pkgs from your current env [old.txt](https://github.com/EstebanMqz/Python-Troubleshooter/blob/main/old.txt) and use pip in the nb as a subprocess (requires [pip](https://pip.pypa.io/en/stable/installation/)).<br>
+
+[`--upgrade-strategy`](https://pip.pypa.io/en/stable/cli/pip_install/#cmdoption-upgrade-strategy)
+- [`only-if-needed`](https://pip.pypa.io/en/stable/cli/pip_install/#cmdoption-upgrade-strategy): Only upgrade the packages that are needed to satisfy the requirements.
+- [`eager`](https://pip.pypa.io/en/stable/cli/pip_install/#cmdoption-upgrade-strategy): Upgrade all packages regardless of whether they are needed to satisfy the requirements.
+<br><br>
+
+3\. <img align="center" width="35px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bash_Logo_Colored.svg/2048px-Bash_Logo_Colored.svg.png">
+Run [Python_Repair.sh](https://github.com/EstebanMqz/Python-Troubleshooter/blob/main/Python_Repair.sh)<br>
+<img src = "Python_Repair.jpg" alt = Unix> <br>
+
+From here we should select a version as displayed.
+<p style="font-size:13px;"><i><b>Note:</b> It could be any version for all your team.</i>
+
+3\. [.exe](https://github.com/EstebanMqz/Python-Troubleshooter/blob/main/python-3.12.0-amd64.exe) should be downloaded in [pwd](https://en.wikipedia.org/wiki/Pwd) as shown.<br>
+<img src="exe.jpg" alt="Bash">
+
+<br><br>
+4\. 
+
+
+5\. <img align="center" width="35px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bash_Logo_Colored.svg/2048px-Bash_Logo_Colored.svg.png">
 
 ```bat
 REM CMD script
@@ -37,10 +59,11 @@ REM CMD script
 runas /user:Administrator "%base%\Scripts\anaconda.exe"
 ```
 
-3. Open [![Jupyter](https://img.shields.io/badge/nbviewer-1.0.0-000000?style=square&logo=jupyter&logoColor=orange)](https://nbviewer.org/github/EstebanMqz/Pkg_Migration/blob/main/pkgs.ipynb) [.ipynb](https://github.com/EstebanMqz/Python_Troubleshooter/blob/main/pkgs.ipynb)</i> in a Code Editor 
+5\. Open [![Jupyter](https://img.shields.io/badge/nbviewer-1.0.0-000000?style=square&logo=jupyter&logoColor=orange)](https://nbviewer.org/github/EstebanMqz/Pkg_Migration/blob/main/pkgs.ipynb) [.ipynb](https://github.com/EstebanMqz/Python_Troubleshooter/blob/main/pkgs.ipynb)</i> in a Code Editor 
 
 
-4. List pkgs in current environment: old_env  [pkgs.txt](https://github.com/EstebanMqz/Python-Troubleshooter/blob/main/old.txt)<br>
+6\. List pkgs in current environment: old_env [pkgs.txt](https://github.com/EstebanMqz/Python-Troubleshooter/blob/main/old.txt)
+
 
 
 

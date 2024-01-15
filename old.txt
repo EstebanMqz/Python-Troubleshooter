@@ -270,6 +270,7 @@ path-and-address
 pathlib
 pathspec
 patsy
+pdfkit
 pep8
 pexpect
 pickleshare
@@ -333,6 +334,7 @@ pytest
 pytest-cov
 pytest-mock
 python-dateutil
+python-docx
 python-dotenv
 python-json-logger
 python-lsp-black
