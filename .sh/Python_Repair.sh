@@ -1,6 +1,6 @@
 #!/bin/bash
-# Description: "This script fetched through HTTP requests with curl, every Python version (including their release date).
-                # Prompts the users to make a selection from any of the Python versions available to make an environment."
+# Description: "HTTP request with curl: Every Python version including their release date.
+                # Prompts the users to select a Python version to install for their environment."
 
 #Obtain current Python version (if any).
 current_version=$(python --version 2>&1 | cut -d' ' -f2)
@@ -36,6 +36,7 @@ fi
 #Repository: https://github.com/EstebanMqz/Python-Troubleshooter
 
 #References:
+#https://www.python.org/downloads/
 #https://linuxcommand.org/lc3_man_pages/curl1.html
 #https://linuxcommand.org/lc3_man_pages/mapfileh.html
 #https://linuxcommand.org/lc3_man_pages/grep1.html
