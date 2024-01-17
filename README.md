@@ -21,7 +21,7 @@
 
 |                                 | <div align="center" style="font-size:20px;">Description</div>                                   |
 | ------------------------------------------ | ----------------------------------------                       |
-| Ext. :  | [.sh](https://github.com/EstebanMqz/Python-Troubleshooter/blob/main/.sh/Python_Repair.sh), [.ipynb](https://github.com/EstebanMqz/Python-Troubleshooter/blob/main/notebook/requirements.ipynb), [.txt](https://github.com/EstebanMqz/Python-Troubleshooter/blob/main/.txt/requirements.txt) |
+| Ext. :  | [.sh](https://github.com/EstebanMqz/Python-Troubleshooter/blob/main/.sh/Python_Repair.sh), [.ipynb](https://github.com/EstebanMqz/Python-Troubleshooter/blob/main/notebook/env_requirements.ipynb), [.txt](https://github.com/EstebanMqz/Python-Troubleshooter/blob/main/.txt/requirements.txt) |
 | Usage: | While most programs in this repo work individually, they ensure remote collaborations in a new Python environment, created by selecting a certain Python version with the updated pkgs for it. <br><br> <i> <p style="font-size:15px;"> Follow these simple steps in order to <b>solve dependencies incompatibilities, runtime errors & security vulnerabilities</b> to ensure Collaborations by matching appropiate pkg versions specifically in an environment.</p>|
 | Tags: | [Python](https://www.python.org/), [Shell](https://en.wikipedia.org/wiki/Shell_script), [Environment](https://en.wikipedia.org/wiki/Environment_variable), [Dependencies](https://pypi.org), [Git](https://git-scm.com/) 
 
@@ -79,21 +79,15 @@ Select a version for your new base / environment.</p>
 
 - [`only-if-needed`](https://pip.pypa.io/en/stable/cli/pip_install/#cmdoption-upgrade-strategy): Only upgrade the packages that are needed to satisfy the requirements.
 - [`eager`](https://pip.pypa.io/en/stable/cli/pip_install/#cmdoption-upgrade-strategy): Upgrade all packages regardless of whether they are needed to satisfy the requirements.)
-</Details></font>
+</Details></font><br>
 
 
-<h4>References:</h4>
-<p>
+<h6>References:</h6>
   <a href="https://github.com/EstebanMqz/Pkg_Migration/blob/main/.sh/Python_Repair.sh">
-    <img src="https://img.shields.io/badge/Bash%20.sh-5.0.21-green?style=flat&logo=gnu-bash&logoColor=white" alt="Shell Script">
-  </a>
+    <img src="https://img.shields.io/badge/Bash%20.sh-5.0.21-green?style=flat&logo=gnu-bash&logoColor=white" alt="Shell Script"></a> 
   <a href="https://www.python.org/">
-    <img src="https://img.shields.io/badge/Python-3.11.5-blue?style=flat&logo=python&logoColor=white" alt="Python">
-  </a>
+    <img src="https://img.shields.io/badge/Python-3.11.5-blue?style=flat&logo=python&logoColor=white" alt="Python"></a>
   <a href="https://git-scm.com/">
-    <img src="https://img.shields.io/badge/Git-2.43.0-red?style=flat&logo=git&logoColor=white" alt="Git">
-  </a>
+    <img src="https://img.shields.io/badge/Git-2.43.0-red?style=flat&logo=git&logoColor=white" alt="Git"></a>
   <a href="https://docs.python.org/3/library/subprocess.html">
-    <img src="https://img.shields.io/badge/subprocess-builtin_module-black?style=flat" alt="subprocess">
-  </a>
-</p>
+    <img src="https://img.shields.io/badge/subprocess-builtin_module-black?style=flat" alt="subprocess"></a>
