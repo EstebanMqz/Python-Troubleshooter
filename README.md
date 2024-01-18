@@ -1,8 +1,10 @@
 <h1><div align="center"><b> Python Migrations </b></font></div></h1><br>
 
-<div align="left">
+<div align="right">
 
 [![Repository](https://img.shields.io/badge/Repo-Visualization-0089D6?style=square&logo=microsoft-azure&logoColor=white)](https://mango-dune-07a8b7110.1.azurestaticapps.net/?repo=EstebanMqz%2FEstebanMqz/Python-Troubleshooter)
+[![HTML](https://img.shields.io/badge/HTML_5-black?style=square&logo=html5&logoColor=red)](https://htmlpreview.github.io/?https://github.com/EstebanMqz/Python-Troubleshooter/blob/main/.html/README.html)
+
 </div>
 
 <div align="right">
@@ -22,7 +24,7 @@
 |                                 | <div align="center" style="font-size:20px;">Description</div>                                   |
 | ------------------------------------------ | ----------------------------------------                       |
 | Ext. :  | [.sh](https://github.com/EstebanMqz/Python-Troubleshooter/blob/main/.sh/Python_Repair.sh), [.ipynb](https://github.com/EstebanMqz/Python-Troubleshooter/blob/main/notebook/env_requirements.ipynb), [.txt](https://github.com/EstebanMqz/Python-Troubleshooter/blob/main/.txt/requirements.txt) |
-| Usage: | While most programs in this repo work individually, they ensure remote collaborations in a new Python environment, created by selecting a certain Python version with the updated pkgs for it. <br><br> <i> <p style="font-size:15px;"> Follow these simple steps in order to <b>solve dependencies incompatibilities, runtime errors & security vulnerabilities</b> to ensure Collaborations by matching appropiate pkg versions specifically in an environment.</p>|
+| Usage: | While most programs in this repo work individually, they ensure remote collaborations in a new Python environment, created by selecting a certain Python version with the updated pkgs for it. <br><br> <i> <p style="font-size:15px;"> Follow these simple steps in order to <b>solve dependencies incompatibilities, runtime errors & security vulnerabilities</b> to ensure Collaborations by matching the appropiate pkg versions that suit an environment.</p>|
 | Tags: | [Python](https://www.python.org/), [Shell](https://en.wikipedia.org/wiki/Shell_script), [Environment](https://en.wikipedia.org/wiki/Environment_variable), [Dependencies](https://pypi.org), [Git](https://git-scm.com/) 
 
 ---
