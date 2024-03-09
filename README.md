@@ -2,10 +2,7 @@
 
 <div align="left">
 
-[![Repository](https://img.shields.io/badge/Repo-Visualization-blue?style=square&logo=microsoft-azure&logoColor=blue)](https://mango-dune-07a8b7110.1.azurestaticapps.net/?repo=EstebanMqz%2FPython-Troubleshooter)
-[![HTML](https://img.shields.io/badge/HTML_5-black?style=square&logo=html5&logoColor=red)](https://htmlpreview.github.io/?https://github.com/EstebanMqz/Python-Troubleshooter/blob/main/.html/README.html)
-
-
+[![HTML](https://img.shields.io/badge/Website-black?style=square&logo=html5&logoColor=red)](https://tinyurl.com/Python-Troubleshooter)
 <br>
 
 
