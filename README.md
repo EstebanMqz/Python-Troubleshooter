@@ -1,9 +1,13 @@
 <h1><div align="center"><b> Python Migrations </b></font></div></h1><br>
 
-<div align="right">
+<div align="left">
 
-[![Repository](https://img.shields.io/badge/Repo-Visualization-0089D6?style=square&logo=microsoft-azure&logoColor=white)](https://mango-dune-07a8b7110.1.azurestaticapps.net/?repo=EstebanMqz%2FEstebanMqz/Python-Troubleshooter)
+[![Repository](https://img.shields.io/badge/Repo-Visualization-blue?style=square&logo=microsoft-azure&logoColor=blue)](https://mango-dune-07a8b7110.1.azurestaticapps.net/?repo=EstebanMqz%2FPython-Troubleshooter)
 [![HTML](https://img.shields.io/badge/HTML_5-black?style=square&logo=html5&logoColor=red)](https://htmlpreview.github.io/?https://github.com/EstebanMqz/Python-Troubleshooter/blob/main/.html/README.html)
+
+
+<br>
+
 
 </div>
 
@@ -19,6 +23,8 @@
 [<img width="40px" src="https://img.icons8.com/color/452/gitlab.png">](https://gitlab.com/EstebanMqz)
 
 </Details></div>
+<b> Job-Related Meetings through LinkedIn:</b><br>
+<i>Connect with me if you need my assistance 24/7 to be alert on WA-Business (pw required).</i>
 <br><br>
 
 |                                 | <div align="center" style="font-size:20px;">Description</div>                                   |
