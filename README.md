@@ -1,10 +1,11 @@
-<h1><div align="center"><b> Python Migrations </b></font></div></h1><br>
+<h1><div align="center"><b> Python & Pkgs Migrations </b></font></div></h1><br>
 
 <div align="left">
 
-[![HTML](https://img.shields.io/badge/Website-black?style=square&logo=html5&logoColor=red)](https://tinyurl.com/Python-Troubleshooter)
+<div align="left">
+<a href="https://htmlpreview.github.io/?https://github.com/EstebanMqz/Python-Troubleshooter/blob/main/.html/README.html"> <img src="https://img.shields.io/badge/HTML-100000?style=flat&logo=html5&logoColor=red" alt="HTML" width="90" height="33">
+</a></div>
 <br>
-
 
 </div>
 
@@ -13,21 +14,21 @@
 <Summary> <i>Business Inquiries:</i> </Summary>
 
 [<img width="40px" src="https://img.icons8.com/ios/50/0e55b3/resume-website.png">](https://estebanmqz.github.io/EstebanMqz/html/Resume.html)
-[<img width="40px" src="https://img.icons8.com/?size=512&id=MR3dZdlA53te&format=png">](https://www.linkedin.com/in/esteban-m-653817205/)
-[<img width="35px" src="https://img.icons8.com/color/452/whatsapp--v1.png">](https://tinyurl.com/2y86e2wa)
+[<img width="40px" src="https://img.icons8.com/?size=512&id=MR3dZdlA53te&format=png">](https://www.linkedin.com/in/estebanmqz/)
+[<img width="36px" height="36px" src="https://cdn.worldvectorlogo.com/logos/whatsapp-business-bg.svg" alt="Business">](https://tinyurl.com/BusinessNo)
 [<img width="40px" src="https://img.icons8.com/color/452/gmail-new.png">](mailto:emarquez1895@gmail.com)
 [<img width="40px" src="https://cdn3d.iconscout.com/3d/free/thumb/free-github-6343501-5220956.png?f=webp">](https://github.com/EstebanMqz?tab=repositories)
 [<img width="40px" src="https://img.icons8.com/color/452/gitlab.png">](https://gitlab.com/EstebanMqz)
-
-</Details></div>
-<b> Job-Related Meetings through LinkedIn:</b><br>
-<i>Connect with me if you need my assistance 24/7 to be alert on WA-Business (pw required).</i>
-<br><br>
+</Details>
+</div><br>
+<div align= "center">
+<i><b>Whatsapp Busines Inquiries only,</b> no pw required 24/7.</i></div>
+<br>
 
 |                                 | <div align="center" style="font-size:20px;">Description</div>                                   |
 | ------------------------------------------ | ----------------------------------------                       |
 | Ext. :  | [.sh](https://github.com/EstebanMqz/Python-Troubleshooter/blob/main/.sh/Python_Repair.sh), [.ipynb](https://github.com/EstebanMqz/Python-Troubleshooter/blob/main/notebook/env_requirements.ipynb), [.txt](https://github.com/EstebanMqz/Python-Troubleshooter/blob/main/.txt/requirements.txt) |
-| Usage: | While most programs in this repo work individually, they ensure remote collaborations in a new Python environment, created by selecting a certain Python version with the updated pkgs for it. <br><br> <i> <p style="font-size:15px;"> Follow these simple steps in order to <b>solve dependencies incompatibilities, runtime errors & security vulnerabilities</b> to ensure Collaborations by matching the appropiate pkg versions that suit an environment.</p>|
+| Usage: | <br><i> <p style="font-size:15px;"> Follow these simple steps in order to <b>solve dependencies incompatibilities, runtime errors & security vulnerabilities</b> in your libraries to ensure Collaborations by matching the appropiate pkg versions that suit an environment.</p> <b>Note:</b> Deleting Python(s) kernels and executing required cells with a [`requirements.txt`](https://github.com/EstebanMqz/Python-Troubleshooter/blob/main/.txt/requirements.txt) might also be a solution.|
 | Tags: | [Python](https://www.python.org/), [Shell](https://en.wikipedia.org/wiki/Shell_script), [Environment](https://en.wikipedia.org/wiki/Environment_variable), [Dependencies](https://pypi.org), [Git](https://git-scm.com/) 
 
 ---
