@@ -1,36 +1,33 @@
 #!/bin/bash
-# Description: "HTTP request with curl: Every Python version including their release date.
-                # Prompts the users to select a Python version to install for their environment."
-
-#Obtain current Python version (if any).
+#Automates process of checking the current Python ver., listing available vers., & downloading & executing installer for selected version.
 current_version=$(python --version 2>&1 | cut -d' ' -f2)
 echo current Python version: $current_version
-
-# Available Python versions and release dates from official Python website.
 html=$(curl -s https://www.python.org/downloads/)
 mapfile -t versions < <(echo "$html" | grep -oP '(?<=Python )\d+\.\d+\.\d+') 
 mapfile -t dates < <(echo "$html" | grep -oP '(?<=<span class="release-date">)[^<]+')
- 
-# Include dates to sorted versions and output array.  
 for i in "${!versions[@]}"; do
     echo "$i version: ${dates[$i]} Python   ${versions[$i]}"
 done
-
-#Chose a version to execute.
 echo "Write a valid version (e.g: '3.11.4'):"
 read selection
-
-# If version is valid.
 if [[ " ${versions[@]} " =~ " ${selection} " ]]; then
-    # Download the selected Python version .exe.
     curl -O "https://www.python.org/ftp/python/$selection/python-$selection-amd64.exe"
-    # Execute. 
-    ./python-$selection-amd64.exe
+    if [[ -f "python-$selection-amd64.exe" ]]; then
+        if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+            xdg-open "python-$selection-amd64.exe"
+        elif [[ "$OSTYPE" == "darwin"* ]]; then
+            open "python-$selection-amd64.exe"
+        elif [[ "$OSTYPE" == "cygwin" || "$OSTYPE" == "msys" || "$OSTYPE" == "win32" ]]; then
+            cmd.exe /C "start python-$selection-amd64.exe"
+        else
+            echo "Please manually run python-$selection-amd64.exe"
+        fi
+    else
+        echo "Download failed or file not found."
+    fi
 else
     echo "Invalid version"
 fi
-
-
 
 #Author: https://github.com/EstebanMqz
 #Repository: https://github.com/EstebanMqz/Python-Troubleshooter
